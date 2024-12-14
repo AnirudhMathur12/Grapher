@@ -69,7 +69,7 @@ int main()
                 mouse_screen_drag = 0;
                 break;
                 case SDL_MOUSEWHEEL:
-                scale += (abs(e.wheel.y)/e.wheel.y)*0.0005;
+                scale -= (abs(e.wheel.y)/e.wheel.y)*0.0005;
 
             }
         }
